@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sopa de Letras - Jujuy 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sopa de Letras - Jujuy 2025</h1>
+  <label>Nombre del siervo: <input type="text" id="playerName" placeholder="Escribí tu nombre" /></label>
+<div class="controls-container">
+ <button id="startBtn">Comenzar</button>
+  <div class="controls" style="display: none;">
+        <span id="timer">Tiempo: 00:00</span>
+  </div>
+  <div id="grid" class="grid" style="display: none;" >
+    <div class="cell" data-row="0" data-col="0">A</div>
+<div class="cell" data-row="0" data-col="1">S</div>
+<div class="cell" data-row="0" data-col="2">J</div>
+<div class="cell" data-row="0" data-col="3">A</div>
+<div class="cell" data-row="0" data-col="4">F</div>
+<div class="cell" data-row="0" data-col="5">C</div>
+<div class="cell" data-row="0" data-col="6">E</div>
+<div class="cell" data-row="0" data-col="7">I</div>
+<div class="cell" data-row="0" data-col="8">C</div>
+<div class="cell" data-row="0" data-col="9">A</div>
+<div class="cell" data-row="0" data-col="10">L</div>
+<div class="cell" data-row="0" data-col="11">I</div>
+<div class="cell" data-row="0" data-col="12">L</div>
+<div class="cell" data-row="0" data-col="13">E</div>
+<div class="cell" data-row="0" data-col="14">G</div>
+<div class="cell" data-row="0" data-col="15">U</div>
+<div class="cell" data-row="0" data-col="16">A</div>
+<div class="cell" data-row="0" data-col="17">Q</div>
+<div class="cell" data-row="0" data-col="18">Q</div>
+<div class="cell" data-row="0" data-col="19">J</div>
+<div class="cell" data-row="1" data-col="0">X</div>
+<div class="cell" data-row="1" data-col="1">V</div>
+<div class="cell" data-row="1" data-col="2">A</div>
+<div class="cell" data-row="1" data-col="3">O</div>
+<div class="cell" data-row="1" data-col="4">I</div>
+<div class="cell" data-row="1" data-col="5">K</div>
+<div class="cell" data-row="1" data-col="6">A</div>
+<div class="cell" data-row="1" data-col="7">B</div>
+<div class="cell" data-row="1" data-col="8">D</div>
+<div class="cell" data-row="1" data-col="9">Q</div>
+<div class="cell" data-row="1" data-col="10">L</div>
+<div class="cell" data-row="1" data-col="11">Z</div>
+<div class="cell" data-row="1" data-col="12">P</div>
+<div class="cell" data-row="1" data-col="13">R</div>
+<div class="cell" data-row="1" data-col="14">M</div>
+<div class="cell" data-row="1" data-col="15">O</div>
+<div class="cell" data-row="1" data-col="16">L</div>
+<div class="cell" data-row="1" data-col="17">V</div>
+<div class="cell" data-row="1" data-col="18">U</div>
+<div class="cell" data-row="1" data-col="19">E</div>
+<div class="cell" data-row="2" data-col="0">T</div>
+<div class="cell" data-row="2" data-col="1">A</div>
+<div class="cell" data-row="2" data-col="2">E</div>
+<div class="cell" data-row="2" data-col="3">D</div>
+<div class="cell" data-row="2" data-col="4">Z</div>
+<div class="cell" data-row="2" data-col="5">U</div>
+<div class="cell" data-row="2" data-col="6">V</div>
+<div class="cell" data-row="2" data-col="7">R</div>
+<div class="cell" data-row="2" data-col="8">O</div>
+<div class="cell" data-row="2" data-col="9">L</div>
+<div class="cell" data-row="2" data-col="10">T</div>
+<div class="cell" data-row="2" data-col="11">A</div>
+<div class="cell" data-row="2" data-col="12">U</div>
+<div class="cell" data-row="2" data-col="13">F</div>
+<div class="cell" data-row="2" data-col="14">Y</div>
+<div class="cell" data-row="2" data-col="15">N</div>
+<div class="cell" data-row="2" data-col="16">D</div>
+<div class="cell" data-row="2" data-col="17">S</div>
+<div class="cell" data-row="2" data-col="18">E</div>
+<div class="cell" data-row="2" data-col="19">S</div>
+<div class="cell" data-row="3" data-col="0">I</div>
+<div class="cell" data-row="3" data-col="1">C</div>
+<div class="cell" data-row="3" data-col="2">V</div>
+<div class="cell" data-row="3" data-col="3">N</div>
+<div class="cell" data-row="3" data-col="4">A</div>
+<div class="cell" data-row="3" data-col="5">T</div>
+<div class="cell" data-row="3" data-col="6">Q</div>
+<div class="cell" data-row="3" data-col="7">H</div>
+<div class="cell" data-row="3" data-col="8">N</div>
+<div class="cell" data-row="3" data-col="9">F</div>
+<div class="cell" data-row="3" data-col="10">X</div>
+<div class="cell" data-row="3" data-col="11">Q</div>
+<div class="cell" data-row="3" data-col="12">C</div>
+<div class="cell" data-row="3" data-col="13">N</div>
+<div class="cell" data-row="3" data-col="14">C</div>
+<div class="cell" data-row="3" data-col="15">C</div>
+<div class="cell" data-row="3" data-col="16">A</div>
+<div class="cell" data-row="3" data-col="17">A</div>
+<div class="cell" data-row="3" data-col="18">B</div>
+<div class="cell" data-row="3" data-col="19">S</div>
+<div class="cell" data-row="4" data-col="0">M</div>
+<div class="cell" data-row="4" data-col="1">A</div>
+<div class="cell" data-row="4" data-col="2">L</div>
+<div class="cell" data-row="4" data-col="3">T</div>
+<div class="cell" data-row="4" data-col="4">R</div>
+<div class="cell" data-row="4" data-col="5">N</div>
+<div class="cell" data-row="4" data-col="6">Z</div>
+<div class="cell" data-row="4" data-col="7">U</div>
+<div class="cell" data-row="4" data-col="8">G</div>
+<div class="cell" data-row="4" data-col="9">A</div>
+<div class="cell" data-row="4" data-col="10">E</div>
+<div class="cell" data-row="4" data-col="11">G</div>
+<div class="cell" data-row="4" data-col="12">J</div>
+<div class="cell" data-row="4" data-col="13">O</div>
+<div class="cell" data-row="4" data-col="14">K</div>
+<div class="cell" data-row="4" data-col="15">O</div>
+<div class="cell" data-row="4" data-col="16">N</div>
+<div class="cell" data-row="4" data-col="17">L</div>
+<div class="cell" data-row="4" data-col="18">R</div>
+<div class="cell" data-row="4" data-col="19">I</div>
+<div class="cell" data-row="5" data-col="0">B</div>
+<div class="cell" data-row="5" data-col="1">C</div>
+<div class="cell" data-row="5" data-col="2">E</div>
+<div class="cell" data-row="5" data-col="3">D</div>
+<div class="cell" data-row="5" data-col="4">F</div>
+<div class="cell" data-row="5" data-col="5">G</div>
+<div class="cell" data-row="5" data-col="6">A</div>
+<div class="cell" data-row="5" data-col="7">S</div>
+<div class="cell" data-row="5" data-col="8">K</div>
+<div class="cell" data-row="5" data-col="9">A</div>
+<div class="cell" data-row="5" data-col="10">V</div>
+<div class="cell" data-row="5" data-col="11">D</div>
+<div class="cell" data-row="5" data-col="12">D</div>
+<div class="cell" data-row="5" data-col="13">E</div>
+<div class="cell" data-row="5" data-col="14">N</div>
+<div class="cell" data-row="5" data-col="15">T</div>
+<div class="cell" data-row="5" data-col="16">A</div>
+<div class="cell" data-row="5" data-col="17">Y</div>
+<div class="cell" data-row="5" data-col="18">A</div>
+<div class="cell" data-row="5" data-col="19">C</div>
+<div class="cell" data-row="6" data-col="0">V</div>
+<div class="cell" data-row="6" data-col="1">I</div>
+<div class="cell" data-row="6" data-col="2">U</div>
+<div class="cell" data-row="6" data-col="3">T</div>
+<div class="cell" data-row="6" data-col="4">D</div>
+<div class="cell" data-row="6" data-col="5">K</div>
+<div class="cell" data-row="6" data-col="6">I</div>
+<div class="cell" data-row="6" data-col="7">P</div>
+<div class="cell" data-row="6" data-col="8">K</div>
+<div class="cell" data-row="6" data-col="9">A</div>
+<div class="cell" data-row="6" data-col="10">O</div>
+<div class="cell" data-row="6" data-col="11">A</div>
+<div class="cell" data-row="6" data-col="12">E</div>
+<div class="cell" data-row="6" data-col="13">B</div>
+<div class="cell" data-row="6" data-col="14">W</div>
+<div class="cell" data-row="6" data-col="15">R</div>
+<div class="cell" data-row="6" data-col="16">W</div>
+<div class="cell" data-row="6" data-col="17">Y</div>
+<div class="cell" data-row="6" data-col="18">D</div>
+<div class="cell" data-row="6" data-col="19">A</div>
+<div class="cell" data-row="7" data-col="0">S</div>
+<div class="cell" data-row="7" data-col="1">O</div>
+<div class="cell" data-row="7" data-col="2">N</div>
+<div class="cell" data-row="7" data-col="3">O</div>
+<div class="cell" data-row="7" data-col="4">B</div>
+<div class="cell" data-row="7" data-col="5">E</div>
+<div class="cell" data-row="7" data-col="6">V</div>
+<div class="cell" data-row="7" data-col="7">D</div>
+<div class="cell" data-row="7" data-col="8">M</div>
+<div class="cell" data-row="7" data-col="9">K</div>
+<div class="cell" data-row="7" data-col="10">M</div>
+<div class="cell" data-row="7" data-col="11">A</div>
+<div class="cell" data-row="7" data-col="12">L</div>
+<div class="cell" data-row="7" data-col="13">R</div>
+<div class="cell" data-row="7" data-col="14">L</div>
+<div class="cell" data-row="7" data-col="15">S</div>
+<div class="cell" data-row="7" data-col="16">O</div>
+<div class="cell" data-row="7" data-col="17">A</div>
+<div class="cell" data-row="7" data-col="18">A</div>
+<div class="cell" data-row="7" data-col="19">M</div>
+<div class="cell" data-row="8" data-col="0">S</div>
+<div class="cell" data-row="8" data-col="1">N</div>
+<div class="cell" data-row="8" data-col="2">A</div>
+<div class="cell" data-row="8" data-col="3">V</div>
+<div class="cell" data-row="8" data-col="4">R</div>
+<div class="cell" data-row="8" data-col="5">L</div>
+<div class="cell" data-row="8" data-col="6">Z</div>
+<div class="cell" data-row="8" data-col="7">H</div>
+<div class="cell" data-row="8" data-col="8">F</div>
+<div class="cell" data-row="8" data-col="9">E</div>
+<div class="cell" data-row="8" data-col="10">M</div>
+<div class="cell" data-row="8" data-col="11">A</div>
+<div class="cell" data-row="8" data-col="12">Z</div>
+<div class="cell" data-row="8" data-col="13">U</div>
+<div class="cell" data-row="8" data-col="14">I</div>
+<div class="cell" data-row="8" data-col="15">N</div>
+<div class="cell" data-row="8" data-col="16">A</div>
+<div class="cell" data-row="8" data-col="17">H</div>
+<div class="cell" data-row="8" data-col="18">H</div>
+<div class="cell" data-row="8" data-col="19">A</div>
+<div class="cell" data-row="9" data-col="0">E</div>
+<div class="cell" data-row="9" data-col="1">E</div>
+<div class="cell" data-row="9" data-col="2">M</div>
+<div class="cell" data-row="9" data-col="3">V</div>
+<div class="cell" data-row="9" data-col="4">D</div>
+<div class="cell" data-row="9" data-col="5">W</div>
+<div class="cell" data-row="9" data-col="6">A</div>
+<div class="cell" data-row="9" data-col="7">X</div>
+<div class="cell" data-row="9" data-col="8">I</div>
+<div class="cell" data-row="9" data-col="9">I</div>
+<div class="cell" data-row="9" data-col="10">M</div>
+<div class="cell" data-row="9" data-col="11">E</div>
+<div class="cell" data-row="9" data-col="12">M</div>
+<div class="cell" data-row="9" data-col="13">Z</div>
+<div class="cell" data-row="9" data-col="14">Y</div>
+<div class="cell" data-row="9" data-col="15">C</div>
+<div class="cell" data-row="9" data-col="16">K</div>
+<div class="cell" data-row="9" data-col="17">J</div>
+<div class="cell" data-row="9" data-col="18">U</div>
+<div class="cell" data-row="9" data-col="19">L</div>
+<div class="cell" data-row="10" data-col="0">L</div>
+<div class="cell" data-row="10" data-col="1">S</div>
+<div class="cell" data-row="10" data-col="2">O</div>
+<div class="cell" data-row="10" data-col="3">S</div>
+<div class="cell" data-row="10" data-col="4">D</div>
+<div class="cell" data-row="10" data-col="5">H</div>
+<div class="cell" data-row="10" data-col="6">M</div>
+<div class="cell" data-row="10" data-col="7">Q</div>
+<div class="cell" data-row="10" data-col="8">G</div>
+<div class="cell" data-row="10" data-col="9">J</div>
+<div class="cell" data-row="10" data-col="10">V</div>
+<div class="cell" data-row="10" data-col="11">H</div>
+<div class="cell" data-row="10" data-col="12">A</div>
+<div class="cell" data-row="10" data-col="13">A</div>
+<div class="cell" data-row="10" data-col="14">Z</div>
+<div class="cell" data-row="10" data-col="15">B</div>
+<div class="cell" data-row="10" data-col="16">O</div>
+<div class="cell" data-row="10" data-col="17">D</div>
+<div class="cell" data-row="10" data-col="18">M</div>
+<div class="cell" data-row="10" data-col="19">L</div>
+<div class="cell" data-row="11" data-col="0">A</div>
+<div class="cell" data-row="11" data-col="1">S</div>
+<div class="cell" data-row="11" data-col="2">A</div>
+<div class="cell" data-row="11" data-col="3">E</div>
+<div class="cell" data-row="11" data-col="4">X</div>
+<div class="cell" data-row="11" data-col="5">Z</div>
+<div class="cell" data-row="11" data-col="6">V</div>
+<div class="cell" data-row="11" data-col="7">O</div>
+<div class="cell" data-row="11" data-col="8">U</div>
+<div class="cell" data-row="11" data-col="9">X</div>
+<div class="cell" data-row="11" data-col="10">U</div>
+<div class="cell" data-row="11" data-col="11">I</div>
+<div class="cell" data-row="11" data-col="12">W</div>
+<div class="cell" data-row="11" data-col="13">X</div>
+<div class="cell" data-row="11" data-col="14">H</div>
+<div class="cell" data-row="11" data-col="15">Z</div>
+<div class="cell" data-row="11" data-col="16">G</div>
+<div class="cell" data-row="11" data-col="17">B</div>
+<div class="cell" data-row="11" data-col="18">A</div>
+<div class="cell" data-row="11" data-col="19">E</div>
+<div class="cell" data-row="12" data-col="0">M</div>
+<div class="cell" data-row="12" data-col="1">W</div>
+<div class="cell" data-row="12" data-col="2">X</div>
+<div class="cell" data-row="12" data-col="3">G</div>
+<div class="cell" data-row="12" data-col="4">N</div>
+<div class="cell" data-row="12" data-col="5">S</div>
+<div class="cell" data-row="12" data-col="6">S</div>
+<div class="cell" data-row="12" data-col="7">O</div>
+<div class="cell" data-row="12" data-col="8">F</div>
+<div class="cell" data-row="12" data-col="9">I</div>
+<div class="cell" data-row="12" data-col="10">A</div>
+<div class="cell" data-row="12" data-col="11">J</div>
+<div class="cell" data-row="12" data-col="12">A</div>
+<div class="cell" data-row="12" data-col="13">N</div>
+<div class="cell" data-row="12" data-col="14">D</div>
+<div class="cell" data-row="12" data-col="15">C</div>
+<div class="cell" data-row="12" data-col="16">X</div>
+<div class="cell" data-row="12" data-col="17">V</div>
+<div class="cell" data-row="12" data-col="18">H</div>
+<div class="cell" data-row="12" data-col="19">N</div>
+<div class="cell" data-row="13" data-col="0">A</div>
+<div class="cell" data-row="13" data-col="1">N</div>
+<div class="cell" data-row="13" data-col="2">C</div>
+<div class="cell" data-row="13" data-col="3">Z</div>
+<div class="cell" data-row="13" data-col="4">N</div>
+<div class="cell" data-row="13" data-col="5">U</div>
+<div class="cell" data-row="13" data-col="6">R</div>
+<div class="cell" data-row="13" data-col="7">B</div>
+<div class="cell" data-row="13" data-col="8">D</div>
+<div class="cell" data-row="13" data-col="9">O</div>
+<div class="cell" data-row="13" data-col="10">A</div>
+<div class="cell" data-row="13" data-col="11">N</div>
+<div class="cell" data-row="13" data-col="12">U</div>
+<div class="cell" data-row="13" data-col="13">H</div>
+<div class="cell" data-row="13" data-col="14">U</div>
+<div class="cell" data-row="13" data-col="15">D</div>
+<div class="cell" data-row="13" data-col="16">A</div>
+<div class="cell" data-row="13" data-col="17">P</div>
+<div class="cell" data-row="13" data-col="18">U</div>
+<div class="cell" data-row="13" data-col="19">O</div>
+<div class="cell" data-row="14" data-col="0">T</div>
+<div class="cell" data-row="14" data-col="1">J</div>
+<div class="cell" data-row="14" data-col="2">I</div>
+<div class="cell" data-row="14" data-col="3">C</div>
+<div class="cell" data-row="14" data-col="4">V</div>
+<div class="cell" data-row="14" data-col="5">U</div>
+<div class="cell" data-row="14" data-col="6">S</div>
+<div class="cell" data-row="14" data-col="7">C</div>
+<div class="cell" data-row="14" data-col="8">S</div>
+<div class="cell" data-row="14" data-col="9">K</div>
+<div class="cell" data-row="14" data-col="10">A</div>
+<div class="cell" data-row="14" data-col="11">C</div>
+<div class="cell" data-row="14" data-col="12">Z</div>
+<div class="cell" data-row="14" data-col="13">Y</div>
+<div class="cell" data-row="14" data-col="14">M</div>
+<div class="cell" data-row="14" data-col="15">A</div>
+<div class="cell" data-row="14" data-col="16">M</div>
+<div class="cell" data-row="14" data-col="17">P</div>
+<div class="cell" data-row="14" data-col="18">A</div>
+<div class="cell" data-row="14" data-col="19">Z</div>
+<div class="cell" data-row="15" data-col="0">Q</div>
+<div class="cell" data-row="15" data-col="1">S</div>
+<div class="cell" data-row="15" data-col="2">L</div>
+<div class="cell" data-row="15" data-col="3">V</div>
+<div class="cell" data-row="15" data-col="4">O</div>
+<div class="cell" data-row="15" data-col="5">X</div>
+<div class="cell" data-row="15" data-col="6">Y</div>
+<div class="cell" data-row="15" data-col="7">G</div>
+<div class="cell" data-row="15" data-col="8">H</div>
+<div class="cell" data-row="15" data-col="9">I</div>
+<div class="cell" data-row="15" data-col="10">T</div>
+<div class="cell" data-row="15" data-col="11">Q</div>
+<div class="cell" data-row="15" data-col="12">A</div>
+<div class="cell" data-row="15" data-col="13">P</div>
+<div class="cell" data-row="15" data-col="14">J</div>
+<div class="cell" data-row="15" data-col="15">E</div>
+<div class="cell" data-row="15" data-col="16">B</div>
+<div class="cell" data-row="15" data-col="17">R</div>
+<div class="cell" data-row="15" data-col="18">C</div>
+<div class="cell" data-row="15" data-col="19">A</div>
+<div class="cell" data-row="16" data-col="0">N</div>
+<div class="cell" data-row="16" data-col="1">S</div>
+<div class="cell" data-row="16" data-col="2">A</div>
+<div class="cell" data-row="16" data-col="3">N</div>
+<div class="cell" data-row="16" data-col="4">I</div>
+<div class="cell" data-row="16" data-col="5">L</div>
+<div class="cell" data-row="16" data-col="6">A</div>
+<div class="cell" data-row="16" data-col="7">S</div>
+<div class="cell" data-row="16" data-col="8">L</div>
+<div class="cell" data-row="16" data-col="9">J</div>
+<div class="cell" data-row="16" data-col="10">F</div>
+<div class="cell" data-row="16" data-col="11">R</div>
+<div class="cell" data-row="16" data-col="12">Z</div>
+<div class="cell" data-row="16" data-col="13">D</div>
+<div class="cell" data-row="16" data-col="14">G</div>
+<div class="cell" data-row="16" data-col="15">I</div>
+<div class="cell" data-row="16" data-col="16">C</div>
+<div class="cell" data-row="16" data-col="17">G</div>
+<div class="cell" data-row="16" data-col="18">A</div>
+<div class="cell" data-row="16" data-col="19">L</div>
+<div class="cell" data-row="17" data-col="0">N</div>
+<div class="cell" data-row="17" data-col="1">J</div>
+<div class="cell" data-row="17" data-col="2">B</div>
+<div class="cell" data-row="17" data-col="3">B</div>
+<div class="cell" data-row="17" data-col="4">T</div>
+<div class="cell" data-row="17" data-col="5">J</div>
+<div class="cell" data-row="17" data-col="6">J</div>
+<div class="cell" data-row="17" data-col="7">E</div>
+<div class="cell" data-row="17" data-col="8">A</div>
+<div class="cell" data-row="17" data-col="9">A</div>
+<div class="cell" data-row="17" data-col="10">R</div>
+<div class="cell" data-row="17" data-col="11">Z</div>
+<div class="cell" data-row="17" data-col="12">V</div>
+<div class="cell" data-row="17" data-col="13">G</div>
+<div class="cell" data-row="17" data-col="14">D</div>
+<div class="cell" data-row="17" data-col="15">N</div>
+<div class="cell" data-row="17" data-col="16">U</div>
+<div class="cell" data-row="17" data-col="17">B</div>
+<div class="cell" data-row="17" data-col="18">L</div>
+<div class="cell" data-row="17" data-col="19">L</div>
+<div class="cell" data-row="18" data-col="0">O</div>
+<div class="cell" data-row="18" data-col="1">Y</div>
+<div class="cell" data-row="18" data-col="2">A</div>
+<div class="cell" data-row="18" data-col="3">K</div>
+<div class="cell" data-row="18" data-col="4">M</div>
+<div class="cell" data-row="18" data-col="5">Y</div>
+<div class="cell" data-row="18" data-col="6">H</div>
+<div class="cell" data-row="18" data-col="7">E</div>
+<div class="cell" data-row="18" data-col="8">G</div>
+<div class="cell" data-row="18" data-col="9">L</div>
+<div class="cell" data-row="18" data-col="10">Z</div>
+<div class="cell" data-row="18" data-col="11">T</div>
+<div class="cell" data-row="18" data-col="12">O</div>
+<div class="cell" data-row="18" data-col="13">R</div>
+<div class="cell" data-row="18" data-col="14">T</div>
+<div class="cell" data-row="18" data-col="15">I</div>
+<div class="cell" data-row="18" data-col="16">L</div>
+<div class="cell" data-row="18" data-col="17">L</div>
+<div class="cell" data-row="18" data-col="18">A</div>
+<div class="cell" data-row="18" data-col="19">I</div>
+<div class="cell" data-row="19" data-col="0">C</div>
+<div class="cell" data-row="19" data-col="1">S</div>
+<div class="cell" data-row="19" data-col="2">R</div>
+<div class="cell" data-row="19" data-col="3">R</div>
+<div class="cell" data-row="19" data-col="4">A</div>
+<div class="cell" data-row="19" data-col="5">U</div>
+<div class="cell" data-row="19" data-col="6">G</div>
+<div class="cell" data-row="19" data-col="7">A</div>
+<div class="cell" data-row="19" data-col="8">J</div>
+<div class="cell" data-row="19" data-col="9">E</div>
+<div class="cell" data-row="19" data-col="10">D</div>
+<div class="cell" data-row="19" data-col="11">E</div>
+<div class="cell" data-row="19" data-col="12">T</div>
+<div class="cell" data-row="19" data-col="13">N</div>
+<div class="cell" data-row="19" data-col="14">E</div>
+<div class="cell" data-row="19" data-col="15">U</div>
+<div class="cell" data-row="19" data-col="16">F</div>
+<div class="cell" data-row="19" data-col="17">J</div>
+<div class="cell" data-row="19" data-col="18">F</div>
+<div class="cell" data-row="19" data-col="19">V</div>
+
+  </div>
+  <div class="words">
+    <h3>¡Que tengas éxito!</h3>
+    <ul id="wordList" style="display: none;">
+      <li>ALDANA</li><li>AMIGOS</li><li>CALILEGUA</li><li>CARNAVAL</li><li>ELIANA</li><li>EMPANADAS</li><li>FEDERICO</li><li>FUENTEDEJAGUAR</li><li>HORNOCAL</li><li>JESSICA</li><li>JUJUY</li><li>LAQUIACA</li><li>LASYUNGAS</li><li>LLAMA</li><li>MANUEL</li><li>PACHAMAMA</li><li>QUEBRADAHUMAHUACA</li><li>SALINAS</li><li>SIERVOS</li><li>SOFIA</li><li>TAMALES</li><li>TORTILLA</li><li>UQUIA</li><li>VACACIONES</li><li>VILLAZON</li>
+    </ul>
+  </div>
+  <div id="result" style="display: none;"></div>
+  <script src="script.js"></script>
+
+
+<!-- Formulario oculto para enviar datos a Google Forms -->
+<form id="scoreForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe5JYBwTgDC3jHhgZnv3RpAOWKD2mH9peue47-bIVYvi70TSQ/formResponse" method="POST" target="hidden_iframe">
+  <input type="text" name="entry.1928379663" id="inputName" />
+  <input type="text" name="entry.1324086839" id="inputTime" />
+  <input type="submit" value="Enviar" style="display:none" />
+</form>
+
+<!-- iframe oculto para enviar el formulario sin recargar -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"></iframe>
+
+<!-- Modal opcional de mensaje -->
+<div id="messageBox" style="
+  display: none; 
+  position: fixed; 
+  top: 40%; left: 50%; 
+  transform: translate(-50%, -50%);
+  background: white; 
+  border: 1px solid black; 
+  padding: 20px; 
+  z-index: 1000;
+  text-align: center;
+">
+  <span id="messageText"></span><br />
+  <button id="messageBtn" onclick="hideMessage()" disabled>Aceptar</button>
+</div>
+
+    <div id="antiCapture"></div>
+  </div>
+
+</body>
+</html>
